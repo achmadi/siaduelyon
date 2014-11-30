@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 28 Nov 2014 pada 01.50
+-- Generation Time: 30 Nov 2014 pada 14.36
 -- Versi Server: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`replid`, `app`, `nama`, `uname`, `passwd`, `level`, `pegawai`, `aktif`, `departemen`, `bahasa`, `tlogin`) VALUES
-(1, 'all', 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 0, '1', 0, 'id', '2014-11-27 10:59:50'),
+(1, 'all', 'Admin', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 0, '1', 0, 'id', '2014-11-28 09:51:30'),
 (14, 'psb', '', 'coni chandra', '21232f297a57a5a743894a0e4a801fc3', 2, 0, '1', 0, '', '2014-03-13 13:32:18'),
 (15, 'gur', 'Agustinus', '201309018', '21232f297a57a5a743894a0e4a801fc3', 2, 18, '1', 0, '', '0000-00-00 00:00:00'),
 (10, 'psb', '', 'tere', '21232f297a57a5a743894a0e4a801fc3', 2, 0, '1', 1, '', '0000-00-00 00:00:00'),
@@ -847,7 +847,7 @@ CREATE TABLE IF NOT EXISTS `aka_siswa_ayah` (
   `telpon` varchar(20) NOT NULL,
   `pinbb` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data untuk tabel `aka_siswa_ayah`
@@ -905,7 +905,7 @@ CREATE TABLE IF NOT EXISTS `aka_siswa_ibu` (
   `telpon` varchar(20) NOT NULL,
   `pinbb` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data untuk tabel `aka_siswa_ibu`
@@ -959,7 +959,7 @@ CREATE TABLE IF NOT EXISTS `aka_siswa_keluarga` (
   `nenek-nama` varchar(100) NOT NULL,
   `nenek-tgllahir` date NOT NULL,
   `tglnikah` date NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data untuk tabel `aka_siswa_keluarga`
@@ -985,7 +985,7 @@ CREATE TABLE IF NOT EXISTS `aka_siswa_kontakdarurat` (
   `nama` varchar(100) NOT NULL,
   `hubungan` varchar(30) NOT NULL,
   `telpon` varchar(50) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data untuk tabel `aka_siswa_kontakdarurat`
@@ -1011,7 +1011,7 @@ CREATE TABLE IF NOT EXISTS `aka_siswa_saudara` (
   `nama` varchar(100) NOT NULL,
   `tgllahir` date NOT NULL,
   `sekolah` varchar(50) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data untuk tabel `aka_siswa_saudara`
@@ -3403,7 +3403,7 @@ CREATE TABLE IF NOT EXISTS `psb_calonsiswa_ayah` (
   `telpon` varchar(20) NOT NULL,
   `pinbb` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data untuk tabel `psb_calonsiswa_ayah`
@@ -3482,7 +3482,7 @@ CREATE TABLE IF NOT EXISTS `psb_calonsiswa_ibu` (
   `telpon` varchar(20) NOT NULL,
   `pinbb` varchar(20) NOT NULL,
   `email` varchar(100) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data untuk tabel `psb_calonsiswa_ibu`
@@ -3555,7 +3555,7 @@ CREATE TABLE IF NOT EXISTS `psb_calonsiswa_keluarga` (
   `nenek-nama` varchar(100) NOT NULL,
   `nenek-tgllahir` date NOT NULL,
   `tglnikah` date NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data untuk tabel `psb_calonsiswa_keluarga`
@@ -3626,7 +3626,7 @@ CREATE TABLE IF NOT EXISTS `psb_calonsiswa_kontakdarurat` (
   `nama` varchar(100) NOT NULL,
   `hubungan` varchar(30) NOT NULL,
   `telpon` varchar(50) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=80 ;
 
 --
 -- Dumping data untuk tabel `psb_calonsiswa_kontakdarurat`
@@ -8571,7 +8571,7 @@ MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 -- AUTO_INCREMENT for table `aka_siswa_ayah`
 --
 ALTER TABLE `aka_siswa_ayah`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `aka_siswa_grup`
 --
@@ -8586,7 +8586,7 @@ MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `aka_siswa_ibu`
 --
 ALTER TABLE `aka_siswa_ibu`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `aka_siswa_kelas`
 --
@@ -8596,17 +8596,17 @@ MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 -- AUTO_INCREMENT for table `aka_siswa_keluarga`
 --
 ALTER TABLE `aka_siswa_keluarga`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `aka_siswa_kontakdarurat`
 --
 ALTER TABLE `aka_siswa_kontakdarurat`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `aka_siswa_saudara`
 --
 ALTER TABLE `aka_siswa_saudara`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `aka_siswa_tes`
 --
@@ -8971,22 +8971,22 @@ MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 -- AUTO_INCREMENT for table `psb_calonsiswa_ayah`
 --
 ALTER TABLE `psb_calonsiswa_ayah`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=80;
 --
 -- AUTO_INCREMENT for table `psb_calonsiswa_ibu`
 --
 ALTER TABLE `psb_calonsiswa_ibu`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=80;
 --
 -- AUTO_INCREMENT for table `psb_calonsiswa_keluarga`
 --
 ALTER TABLE `psb_calonsiswa_keluarga`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=80;
 --
 -- AUTO_INCREMENT for table `psb_calonsiswa_kontakdarurat`
 --
 ALTER TABLE `psb_calonsiswa_kontakdarurat`
-MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=79;
+MODIFY `replid` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=80;
 --
 -- AUTO_INCREMENT for table `psb_calonsiswa_saudara`
 --
